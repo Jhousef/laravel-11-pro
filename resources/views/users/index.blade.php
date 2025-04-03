@@ -7,7 +7,14 @@
     <title>Document</title>
 </head>
 <body>
+    {{-- php --}}
+    {{-- foreach --}}
+    {{-- if/else --}}
     <h1>{{ $greeting }}</h1>
+    @foreach($users as $user)
+        <div>{{ $user->name }} ({{ $user->email }})</div>
+    @endforeach
+
     {{ dd($users) }}
 </body>
 </html>
